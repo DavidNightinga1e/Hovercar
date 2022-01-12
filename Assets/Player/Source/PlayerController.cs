@@ -1,4 +1,3 @@
-using System;
 using Source.Car;
 using UnityEngine;
 
@@ -9,7 +8,6 @@ namespace HoverCar.Player
         [SerializeField] private Rigidbody playerRigidbody;
         [SerializeField] private CarAnimation carAnimation;
         [SerializeField] private Transform[] hoverPoints;
-        [SerializeField] private Transform hoverPointsAnchor;
         [SerializeField] private Transform thrustPoint;
         [SerializeField] private Collider idleCollider;
         [SerializeField] private Collider flyCollider;
@@ -57,7 +55,8 @@ namespace HoverCar.Player
             var accelerationInput = Input.GetAxis("Vertical");
             var steerInput = Input.GetAxis("Horizontal");
 
-            playerRigidbody.AddForceAtPosition(transform.forward * (accelerationInput * acceleration * Time.deltaTime), thrustPoint.position);
+            playerRigidbody.AddForceAtPosition(transform.forward * (accelerationInput * acceleration * Time.deltaTime),
+                thrustPoint.position);
             playerRigidbody.AddTorque(Vector3.up * (rotation * steerInput * Time.deltaTime));
         }
 
@@ -73,19 +72,6 @@ namespace HoverCar.Player
                     var force = (hoverHeight - distance) / hoverHeight;
                     playerRigidbody.AddForceAtPosition(Vector3.up * (force * hoverForce * Time.deltaTime),
                         hoverPoint.position);
-                }
-                else
-                {
-                    // if (hoverPoint.position.y > hoverPointsAnchor.position.y)
-                    // {
-                    //     playerRigidbody.AddForceAtPosition(Vector3.down * (hoverForce * Time.deltaTime),
-                    //         hoverPoint.position);
-                    // }
-                    // else
-                    // {
-                    //     playerRigidbody.AddForceAtPosition(Vector3.up * (hoverForce * Time.deltaTime),
-                    //         hoverPoint.position);
-                    // }
                 }
             }
         }
