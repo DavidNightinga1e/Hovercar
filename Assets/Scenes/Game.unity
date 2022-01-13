@@ -25255,6 +25255,38 @@ PrefabInstance:
       propertyPath: gunPositionGizmo
       value: 
       objectReference: {fileID: 278334456}
+    - target: {fileID: 1310622850373638776, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310622850373638776, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310622850373638776, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_SpotAngle
+      value: 78.39003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310622850373638776, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 35.627808
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564364692954232060, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_Range
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564364692954232060, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_Intensity
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564364692954232060, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_SpotAngle
+      value: 78.39003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4564364692954232060, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 35.627808
+      objectReference: {fileID: 0}
     - target: {fileID: 5900341073991464265, guid: 4dd145ea2928a5a44b099383fb4502a8, type: 3}
       propertyPath: targetCamera
       value: 
